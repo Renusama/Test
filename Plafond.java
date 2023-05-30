@@ -25,3 +25,10 @@ public class Plafond {
         this.revetementP = revetementP;
     }
 }
+public double calculerPrixRevêtement(double prixUnitaire) {
+    double prixTotal = 0.0;
+    if (revetementP != null) {
+        prixTotal = surfaceP * prixUnitaire;
+    }
+    return prixTotal;
+}
