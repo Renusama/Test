@@ -26,5 +26,14 @@ public class Sol {
     }
     
     
+    public double calculerPrixRevêtementSol(double prixUnitaire) {
+    double prixTotal = 0.0;
+    double surfaceSol = calculerSurfaceAuSol(); // Supposons qu'il existe une méthode calculerSurfaceAuSol() dans la classe Pieces
     
+    if (surfaceSol > 0) {
+        prixTotal = surfaceS * revetementS;
+    }
+    
+    return prixTotal;
+}
 }
