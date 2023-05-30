@@ -83,4 +83,11 @@ Pieces Pieces = new Pieces(longueur, largeur);
         return longueur * largeur;
     }
 }
+// on récupère le prix des murs, du sol et du plafond puis on fait la somme
+public double cost_Pieces(){
+return(this.Plafond.prix_revetements() + this.Sol.prix_revetements() + Mur.Mur()mapToDouble(Mur -> Mur.prix_revetements()).sum());
+}
+}
+
+
 
