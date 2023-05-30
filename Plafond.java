@@ -25,3 +25,13 @@ public class Plafond {
         this.revetementP = revetementP;
     }
 }
+public double calculerPrixRevêtementPlafond(double revetementP) {
+    double prixTotal = 0.0;
+    double surfaceP = calculerSurfaceAuSol(); 
+    
+    if (surfaceSol > 0) {
+        prixTotal = surfaceSol * revetementP;
+    }
+    
+    return prixTotal;
+}
